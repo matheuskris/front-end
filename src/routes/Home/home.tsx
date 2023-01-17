@@ -36,6 +36,8 @@ function Home() {
   const { loading, data, error } = useQuery<GetPostsData>(FETCH_POSTS_QUERY);
   const { currentUser: user } = useContext(AuthContext);
 
+  console.log(import.meta.env.VITE_SERVER_URL);
+
   return (
     <Grid columns={3}>
       <Grid.Row className="page-title">

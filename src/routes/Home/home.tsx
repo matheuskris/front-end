@@ -28,7 +28,7 @@ export type Post = {
   likesCount: number;
   commentsCount: number;
 };
-type GetPostsData = {
+export type GetPostsData = {
   getPosts: Post[];
 };
 
